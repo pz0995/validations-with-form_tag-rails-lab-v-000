@@ -23,7 +23,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     #if @post.update(post_params)
 
-      if @post.save
+      if @post.valid?
+        @post.save
         #(post_params)
       redirect_to post_path(@post)
     else
