@@ -3,7 +3,8 @@ class PostsController < ApplicationController
   attr_accessor :post
   
   def show
-    @post = Post.find(params[:id])
+    #@post = Post.find(params[:id])
+    @post = Post.all
   end
 
   def new
