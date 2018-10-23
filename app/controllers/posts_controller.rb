@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   attr_accessor :post
+  
   def show
     @post = Post.find(params[:id])
   end
