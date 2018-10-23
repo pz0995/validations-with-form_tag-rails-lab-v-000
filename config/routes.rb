@@ -2,7 +2,7 @@
 
 
 
- resources :show, :new, :edit, :create, :update
+ #resources :show, :new, :edit, :create, :update
 
  Rails.application.routes.draw do
   get "/authors/new", to: "authors#new", as: "new_author"
