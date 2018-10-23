@@ -20,7 +20,10 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.update(post_params)
+    #if @post.update(post_params)
+
+      if @post.save
+        #(post_params)
       redirect_to post_path(@post)
     else
       render :new
